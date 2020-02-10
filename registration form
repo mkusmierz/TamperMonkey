@@ -2,7 +2,10 @@
 // @name         registration form
 // @version      1.0
 // @icon         
-// @match        
+// @match        https://gistrationform.com
+// @require      http://code.jquery.com/jquery-2.1.4.min.js
+// @require      https://cdnjs.cloudflare.com/ajax/libs/select2/3.5.4/select2.min.js 
+
 // ==/UserScript==
 
 (function() {
