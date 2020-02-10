@@ -1,0 +1,23 @@
+// ==UserScript==
+// @name         registration form
+// @version      1.0
+// @icon         
+// @match        
+// ==/UserScript==
+
+(function() {
+    'use strict';
+   function randomNumber() {
+   return Math.round((100 + (Math.random()*(999 - 100))));
+}
+   var number = randomNumber();
+   var mail = "test+"+number+"@test.pl";
+
+    document.getElementById("business-1").click();
+    document.getElementById('email_confirm').value = mail;
+    document.getElementById('user_name').value ='test' + number;
+    document.getElementById('user_password').value ="password";
+    $j('#s2id_countryId').select2('val', 'PL');
+    document.getElementById('contactPhone-number').value ="987987"+number;
+
+})();
